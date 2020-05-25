@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>SIGN UP</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="CSS/signup.css">
+</head>  
+
+<body background="IMAGES/signup bg.jpg" style="background-size: cover; width: 100%; height: 100%;">
+  
+<!--------------------------------------------------- Navbar starts here------------------------------------------------------------>
+
+<div class="container">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-custom fixed-top">
+   
+      <a class="navbar brand" href="#"><img src="IMAGES/logo.png" alt="logo" width="70" height="70"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav text center ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="login.html">BOOKS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="author.html">AUTHORS</a>
+        </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+  
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+            <a class="nav-link" href="login.html">LOG IN</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="signup.html">SIGN UP</a>
+          </li>
+          </ul> 
+        
+        </form>
+      </div> -->
+  </nav>
+  </div> 
+  <!-------------------------------------------------------- Nav ends here --------------------------------------------------------->
+        
+    <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12"></div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+    
+                    <form class= "form-container" action="login.html"  onsubmit=" return validate()">
+                      <h1>Sign Up Here</h1> <br>
+                       
+                        <div class="form-group">
+                          <label>Full Name</label>
+                          <input type="text" id="name" class="form-control rounded-pill form-control-lg"  placeholder="Full Name">
+                          <span id="nameerror"></span>
+                        </div>
+    
+                        
+                        <div class="form-group">
+                          <label>E-mail Id</label>
+                          <input type="text" id="email" class="form-control rounded-pill form-control-lg" placeholder="E-mail ID">
+                          <span id="emailerror"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Contact Number</label>
+                            <input type="text" id="number" class="form-control rounded-pill form-control-lg" placeholder="Contact number">
+                            <span id="numbererror"></span>
+                          </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" id="pwd" class="form-control rounded-pill form-control-lg" placeholder="Password">
+                            <span id="pwderror"></span>
+                        </div>
+
+                        <div class="progress" id="progs">
+                          <div class="progress-bar" id="strength" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div id="strgts"></div>
+                    
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" id="cnfpwd" class="form-control rounded-pill form-control-lg" placeholder=" Confirm Password">
+                            <span id="cnfpwderror"></span>
+                          </div>
+                        
+                        <button type="submit" class="btn mt-5 btn-custom btn-block text-uppercase rounded-pill form-control-lg">SIGN UP</button>
+                        <p class="mt-3">Already have an account ?<a href="login.html"> Login Here</a></p>
+                      
+                      </form>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            </div>
+        </div>
+        <br>
+<!------------------------------------------------------- footer starts here ----------------------------------------------------->
+
+<footer class="on-ftr">
+
+  <div class="box">
+      
+    <div class="row ftr-header">
+        <div class="col-md-3"><h5><span class="clr-2">Quick</span> Links</h5></div>
+        <div class="col-md-3"><h5><span class="clr-2">Extra</span> Links</h5></div>
+        <div class="col-md-3"><h5><span class="clr-2">Library</span> Resources</h5></div>
+        <div class="col-md-3"><h5><span class="clr-2">Hours &</span> Directions</h5></div>
+     </div>
+
+     <div class="row ftr-input">
+       
+       <div class="col-md-3">
+         <dd class="clr-link"><a class="clr-link" href="index.html">Home</a></dd>
+         <dd class="clr-link"><a class="clr-link" href="about.html">About Us</dd>
+         <dd class="clr-link"><a class="clr-link" href="book.html">Books</dd>
+         <dd class="clr-link"><a class="clr-link" href="author.html">Authors</dd>
+          <dd class="clr-link"><a class="clr-link" href="contact.html">Contact Us</dd>
+       </div>
+
+       <div class="col-md-3">
+        <dd class="clr-link"><a class="clr-link" href="">Terms & Conditions</a></dd>
+         <dd  class="clr-link"><a class="clr-link" href="">Privacy & Policy</dd>
+         <dd  class="clr-link"><a class="clr-link" href="">Rules & Regulations</dd>
+          <dd  class="clr-link"><a class="clr-link" href="">Accessibility Statement</dd>
+       </div>
+       
+       <div class="col-md-3">
+        <dd  class="clr-link"><a class="clr-link" href="">Databases</dd>
+        <dd  class="clr-link"><a class="clr-link" href="">Get a Library Card </dd>
+        <dd  class="clr-link"><a class="clr-link" href="">Public Computers</dd>
+        <dd  class="clr-link"><a class="clr-link" href="">Ask a Librarian</dd>
+       </div>
+       
+       <div class="col-md-3">
+        <dd  class="clr-link"><a class="clr-link" href="">Library & Bookstore Hours</dd>
+        <dd  class="clr-link"><a class="clr-link" href="">Directions</dd>
+       </div>
+       
+     </div>
+  
+</div>
+
+<!-------------------------------------------------- icon starts here ------------------------------------------------------>
+
+<div class="social-icons-box">
+
+
+  <div class="social-icons">
+    <ul>
+      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+     <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li> 
+    </ul>
+    
+  </div>
+
+</div>
+
+<!-------------------------------------------------- icon ends here ----------------------------------------------------------->
+
+</footer>
+ 
+<!------------------------------------------------------- footer ends here ------------------------------------------------------->
+
+
+<!--------------------------------------------------- bottom footer starts here --------------------------------------------------->
+
+<div class="container-fluid bg-dark bottom-ftr text-center" style="width: 100%;">
+  
+  <div class="row">
+      <div class="col-md-12">Copyright &copy; 2020 National Public Library, All Rights Reserved.</div>
+  
+  </div>
+</div>
+<!----------------------------------------------------- bottom footer ends here ---------------------------------------------------->
+
+
+<!------------------------------------------JS Function(Validation) starts here------------------------------------------------->
+
+<script>
+            
+  function validate() {
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let number = document.getElementById("number");
+    let password = document.getElementById("pwd");
+    let cnfpassword = document.getElementById("cnfpwd");
+
+             let namecheck= /^([A-Za-z. ]{3,30})$/
+             let emailcheck = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3}?)$/;
+             let pwdcheck = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+             let numbercheck = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+      
+//Name validation starts here//
+
+                    if(namecheck.test(name.value)){
+                    document.getElementById('nameerror').innerHTML="";
+                    }
+
+                    else{
+                    document.getElementById('nameerror').innerHTML="**Name is Invalid**";
+                    document.getElementById('nameerror').style.color = "red";
+                    document.getElementById('nameerror').style.fontSize = "12px";
+                    document.getElementById('nameerror').style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif"
+                    return false;
+                    }
+
+//Email validation starts here//
+
+                    if (emailcheck.test(email.value)){
+                    document.getElementById('emailerror').innerHTML="";
+                    }
+
+                     else{
+                    document.getElementById('emailerror').innerHTML="**Email ID is Invalid**";
+                    document.getElementById('emailerror').style.color = "red";
+                    document.getElementById('emailerror').style.fontSize = "12px";
+                    document.getElementById('emailerror').style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif"
+                    return false;
+                    }
+
+// Number Validation starts here//
+
+                    if(numbercheck.test(number.value)){
+                    document.getElementById('numbererror').innerHTML="";
+                    }
+
+                    else{
+                    document.getElementById('numbererror').innerHTML="**Number is Invalid**";
+                    document.getElementById('numbererror').style.color = "red";
+                    document.getElementById('numbererror').style.fontSize = "12px";
+                    document.getElementById('numbererror').style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif"
+                    return false;
+                    }
+
+//Password validation starts here//
+
+                    if (pwdcheck.test(pwd.value)){
+                    document.getElementById('pwderror').innerHTML="";
+                    }
+
+                    else{
+                    document.getElementById('pwderror').innerHTML="**Password is Invalid";
+                    document.getElementById('pwderror').style.color = "red";
+                    document.getElementById('pwderror').style.fontSize = "12px";
+                    document.getElementById('pwderror').style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif"
+                    return false;
+                    }
+
+//confirm-password validation starts here//
+         
+            
+                    if (cnfpwd.value == "") {
+                    document.getElementById('pwderror').innerHTML = " **Please confirm your password**";
+                    document.getElementById('pwderror').style.color = "red";
+                    document.getElementById('pwderror').style.fontSize = "11px";
+                    document.getElementById('pwderror').style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif"
+                    return false;
+                    }
+
+                    else if (pwd.value != cnfpwd.value){
+                    document.getElementById('cnfpwderror').innerHTML = "**Password does not match**";
+                    document.getElementById('cnfpwderror').style.color = "red";
+                    document.getElementById('cnfpwderror').style.fontSize = "12px";
+                    document.getElementById('cnfpwderror').style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif";
+                    return false;
+                    }
+
+                    else (cnfpwd.value);{
+                    document.getElementById('cnfpwderror').innerHTML = "";
+                  
+                    }
+
+                    document.getElementById('pwderror').innerHTML = " **Login Successfull**";
+                    document.getElementById('pwderror').style.color = "green";
+                    document.getElementById('pwderror').style.fontSize = "14px";
+                    return true;
+  }
+  
+
+// Password Checker starts here //
+
+    let pass= document.getElementById('pwd');
+    
+    pass.addEventListener('keyup',function(){
+    checkPassword(pwd.value)
+    })
+
+              function checkPassword(password){
+
+                var prog = document.getElementById('progs');
+                var strengthBar = document.getElementById('strength');
+                var strength=0;
+
+                if(password.match(/[a-z]/))
+                {
+                  strength += 1;
+                }
+                
+                if((password.length>=6)&&(password.match(/[!\@\#\$\%\^\&\*\?\-\_\>\<\.\,]/)))
+                {
+                  strength += 1;
+              
+                }
+            
+                if((password.length>=8)&&(password.match(/[a-z]/))&&(password.match(/[A-Z]/))&&(password.match(/[0-9]/)))
+                {
+                  strength += 1;
+              
+                }
+                switch(strength)
+                {
+                  case 0: strengthBar.style.width='0%';
+                          prog.style.visibility='visible';
+                          document.getElementById('strgts').style.visibility='hidden';
+                          document.getElementById('strgts').style.color='red'
+                          break;
+
+                  case 1: strengthBar.style.width='40%';
+                          prog.style.visibility='visible';
+                          strengthBar.style.backgroundColor='red';
+                          document.getElementById('strgts').style.visibility='visible';
+                          document.getElementById('strgts').innerText="Poor";
+                          document.getElementById('strgts').style.color='red';
+                          break;
+
+                  case 2: strengthBar.style.width='80%';
+                          prog.style.visibility='visible';
+                          strengthBar.style.backgroundColor='orange';
+                          document.getElementById('strgts').style.visibility='visible';
+                          document.getElementById('strgts').innerText="Medium";
+                          document.getElementById('strgts').style.color='orange';
+                          break;
+                          
+                  case 3: strengthBar.style.width='100%';
+                          prog.style.visibility='visible';
+                          strengthBar.style.backgroundColor='green';
+                          document.getElementById('strgts').style.visibility='visible';
+                          document.getElementById('strgts').innerText="Strong";
+                          document.getElementById('strgts').style.color='green';
+                          break;
+
+              }
+
+            }
+
+</script>
+
+<!--------------------------------------------------JS Function(Validation)ends here----------------------------------------------------->
+
+</body>
+</html>
+
+                      

@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-size: cover;
+}
+header{
+    
+    background-color: rgba(10, 134, 134, 0.9);
+    padding-bottom: 1%;
+}
+.head-tag{
+    float: right;
+    margin-top: 33px;
+    margin-right: 55px;
+}
+
+.head-tag a{
+    font-family:monospace;
+    text-decoration: none;
+    font-size: x-large;
+    font-style: normal;
+    color: white;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.head-tag a:hover{
+    background-color: rgb(3, 3, 3);
+    transition: 0.3s linear;
+}
+
+.contact-us{
+    height: 80vh;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card{
+    background:rgba(78, 58, 72, 0.8);
+    padding: 0 20px;
+    margin: 0 20px;
+    width: calc(33% - 20px);
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    border-radius: 2px 100px 2px 100px;
+   
+}
+
+.card-icon{
+    font-size: 28px;
+    background: rgb(79, 212, 195);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 40%;
+    transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+    background: none;
+    color: rgb(25, 252, 165);
+    transform: scale(1.6);
+}
+
+.card p{
+    margin-top: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.card:hover p{
+    max-height: 40px;
+    opacity: 1;
+}
+
+.on-ftr{
+    background: rgba(160, 157, 157, 0.9);
+    padding: 10px;
+    padding-left: 10%;
+    color: aliceblue;
+  }
+  .clr-2{
+    color: purple;
+  }
+  
+  .ftr-header{
+    font-family: monospace;
+  }
+  .ftr-input{
+    padding: 8px 0;
+  
+  }
+  .clr-link{
+    color: rgb(160, 17, 105);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+  }
+  .social-icons ul{
+    text-align: left;
+  }
+  .social-icons ul li{
+  display: inline-block;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  }
+  .social-icons ul li a{
+    display: block;
+    font-size: 25px;
+  }
+  
+   .fa-facebook{
+    color: #3b5998;
+    
+  }
+   .fa-twitter{
+    color: #38A1F3;
+    padding-left: 10px;
+  }
+  .fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 20%;
+    padding-left: 10px;
+  }
+  .fa-youtube{
+    color:  #f01000;
+    padding-left: 10px;
+  }
+  .on-ftr{
+    background: rgb(170, 163, 163);
+    padding-left: 10%;
+  }
+  .clr-2{
+    color: purple;
+  }
+  
+  .ftr-input{
+    padding: 8px 0;
+  
+  }
+  .clr-link{
+    color: rgb(160, 17, 105);
+    font-family: serif;
+    font-size: 13px;
+  }
+  .bottom-ftr{
+    color: rgb(255, 204, 108); 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+  }
+  

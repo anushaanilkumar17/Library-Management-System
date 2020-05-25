@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .navbar-dark{
+    width: 100%;
+    height: 15vh; 
+  }
+  
+  .bg-custom{
+    background-color: teal;
+  }
+  
+  .navbar-nav a{
+    font-family:monospace;
+    font-size:x-large;
+    font-style: normal;
+    font-weight: lighter;
+    border: 1px solid transparent;
+  }
+  
+  .navbar-nav a:hover{
+    background-color: rgba(2, 23, 29, 0.8);
+    transition: 0.3s linear;
+  }
+
+
+.card-heading{
+  font-style: normal;
+  font-size: 35px;
+  color: olive;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 5%;
+   
+} 
+
+.btn a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.btn-custom{
+border-color: rgb(134, 117, 114);
+color: rgb(245, 245, 245);
+font-size: 17px;
+font-weight: normal;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-custom:focus,
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:active:focus{
+
+background-color: rgb(245, 199, 139,0.3);
+border-color:purple;
+color: whitesmoke;
+}
+
+.btn-custom:focus{
+box-shadow: 0 0 0.2rem rgba(252, 140, 121, 0.25);
+}
+
+
+.card-link {
+font-size: 15px;
+font-family: monospace;
+color: purple;
+text-align: center;
+padding-right: auto;
+padding-left: auto;
+margin-left: 30%;
+}
+
+.on-ftr{
+  background: rgba(160, 157, 157, 0.9);
+  padding: 10px;
+  padding-left: 10%;
+  color: aliceblue;
+}
+.clr-2{
+  color: purple;
+}
+
+.ftr-title{
+  font-family: monospace !important;
+  text-align: left;
+}
+.ftr-input{
+  padding: 8px 0;
+
+}
+.clr-link{
+  color: rgb(160, 17, 105);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+.social-icons ul{
+  text-align: left;
+}
+.social-icons ul li{
+display: inline-block;
+padding-top: 1px;
+padding-bottom: 1px;
+}
+.social-icons ul li a{
+  display: block;
+  font-size: 25px;
+}
+
+ .fa-facebook{
+  color: #3b5998;
+  
+}
+ .fa-twitter{
+  color: #38A1F3;
+  padding-left: 10px;
+}
+.fa-instagram{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 20%;
+  padding-left: 10px;
+}
+.fa-youtube{
+  color:  #f01000;
+  padding-left: 10px;
+}
+.on-ftr{
+  background: rgb(170, 163, 163);
+  padding-left: 10%;
+}
+.clr-2{
+  color: purple;
+}
+
+.ftr-input{
+  padding: 8px 0;
+
+}
+.clr-link{
+  color: rgb(160, 17, 105);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+}
+.bottom-ftr{
+  color: rgb(255, 204, 108); 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
